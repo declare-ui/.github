@@ -1,17 +1,17 @@
 <p align="left">
-  <img width="1280" height="192" alt="wordmark-color-transparent-1280x192" src="https://github.com/user-attachments/assets/d51c038f-7822-4ee4-beb8-f438894f7736" />
-  <img width="1280" height="192" alt="wordmark-color-dark-1280x192" src="https://github.com/user-attachments/assets/44918531-3b1b-4ace-bca0-db0ea99f8bc8" />
+  <img width="1280" height="192" alt="DeclareUI" src="https://github.com/user-attachments/assets/d51c038f-7822-4ee4-beb8-f438894f7736#gh-light-mode-only" />
+  <img width="1280" height="192" alt="DeclareUI" src="https://github.com/user-attachments/assets/44918531-3b1b-4ace-bca0-db0ea99f8bc8#gh-dark-mode-only" />
 </p>
 
 <h1 align="left">DeclareUI</h1>
 
 <p align="left">
-  <strong>Write once in YAML. Ship everywhere in native code.</strong>
+  <strong>Describe your UI. We'll build it.</strong>
 </p>
 
 <p align="left">
-  Define UI components declaratively in YAML or JSON.<br/>
-  Compile to React, Vue, Angular, Svelte, Web Components & vanilla JS/TS — with Tailwind built in.
+  Create professional UI components in simple YAML — no frontend expertise needed.<br/>
+  DeclareUI compiles them to production-ready React, Vue, Angular, Svelte, or Web Components.
 </p>
 
 <p align="left">
@@ -25,8 +25,10 @@
 
 ### How it works
 
+**1. Describe** — Write what you want in YAML. Props, layout, Tailwind styles. If you can describe it, you can build it.
+
 ```yaml
-# button.ui.yaml — one source file
+# button.ui.yaml — readable by anyone
 component: Button
 props:
   variant:
@@ -49,11 +51,15 @@ template:
       content: "$props.label"
 ```
 
+**2. Preview** — See it live instantly. Tweak until it's right.
+
+**3. Ship** — Export to any framework your team uses.
+
 ```bash
 declareui build --targets react,vue,svelte,angular,wc
 ```
 
-One YAML file → native, idiomatic components for every framework. Not wrappers — real React hooks, Vue Composition API, Svelte runes, Angular standalone components, and Custom Elements. Full TypeScript types included.
+The output is native, idiomatic code — real React hooks, Vue Composition API, Svelte runes, Angular standalone components. Not wrappers. Full TypeScript types included.
 
 ---
 
@@ -74,9 +80,19 @@ One YAML file → native, idiomatic components for every framework. Not wrappers
 
 ---
 
+### Who is DeclareUI for?
+
+- **Backend devs** — "I need a UI but I don't speak React"
+- **Indie hackers** — "I want to prototype fast without framework lock-in"
+- **Designers** — "I know Tailwind. I just can't wire up the React part"
+- **PMs** — "I want to contribute components, not just specs"
+- **Frontend teams** — "One source, every framework"
+
+---
+
 ### AI-native by design
 
-DeclareUI ships with an **MCP Server** that lets AI agents like Claude, Cursor, and Windsurf create, modify, validate, and document components through conversation.
+DeclareUI ships with an **MCP Server** that lets AI agents like Claude, Cursor, and Windsurf create, modify, validate, and document components through conversation. You don't even need to write YAML — just describe what you want.
 
 ```json
 {
@@ -107,5 +123,5 @@ declareui build --targets react,vue
 ---
 
 <p align="center">
-  <sub>Open source · MIT License · Built for teams that ship UI everywhere.</sub>
+  <sub>Open source · MIT License · Built for anyone who needs UI.</sub>
 </p>
