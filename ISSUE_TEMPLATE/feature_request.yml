@@ -1,0 +1,33 @@
+name: Feature Request
+description: Suggest a new feature or enhancement
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem or use case
+      placeholder: What problem does this solve?
+    validations:
+      required: true
+  - type: textarea
+    id: solution
+    attributes:
+      label: Proposed solution
+      placeholder: How should it work?
+    validations:
+      required: true
+  - type: dropdown
+    id: scope
+    attributes:
+      label: Which repo does this affect?
+      options:
+        - core (parser/generators)
+        - cli
+        - mcp (AI/agents)
+        - components
+        - tailwind-plugin
+        - vscode
+        - docs
+        - other
+    validations:
+      required: true
