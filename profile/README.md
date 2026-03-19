@@ -10,8 +10,8 @@
 </p>
 
 <p align="left">
-  Create professional UI components in simple YAML — no frontend expertise needed.<br/>
-  DeclareUI compiles them to production-ready React, Vue, Angular, Svelte, or Web Components.
+  Declare UI components in simple YAML and compile them to production-ready<br/>
+  React, Vue, Angular, Svelte, or Web Components. One source, every framework.
 </p>
 
 <p align="left">
@@ -82,10 +82,10 @@ The output is native, idiomatic code — real React hooks, Vue Composition API, 
 
 ### Who is DeclareUI for?
 
-- **Backend devs** — "I need a UI but I don't speak React"
+- **Backend devs** — "I'd rather describe than code the UI by hand"
 - **Indie hackers** — "I want to prototype fast without framework lock-in"
-- **Designers** — "I know Tailwind. I just can't wire up the React part"
-- **PMs** — "I want to contribute components, not just specs"
+- **Designers** — "I think in design. DeclareUI thinks in code."
+- **PMs** — "I want to contribute real components, not just specs"
 - **Frontend teams** — "One source, every framework"
 
 ---
@@ -123,5 +123,5 @@ declareui build --targets react,vue
 ---
 
 <p align="center">
-  <sub>Open source · MIT License · Built for anyone who needs UI.</sub>
+  <sub>Open source · MIT License · Built for every kind of builder.</sub>
 </p>
