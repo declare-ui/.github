@@ -99,7 +99,7 @@ DeclareUI ships with an **MCP Server** that lets AI agents like Claude, Cursor, 
   "mcpServers": {
     "declareui": {
       "command": "npx",
-      "args": ["-y", "@declareui/mcp"]
+      "args": ["-y", "@declareuihq/mcp"]
     }
   }
 }
@@ -114,7 +114,7 @@ DeclareUI ships with an **MCP Server** that lets AI agents like Claude, Cursor, 
 ### Quick start
 
 ```bash
-npm install -g @declareui/cli
+npm install -g @declareuihq/cli
 declareui init my-design-system
 cd my-design-system
 declareui build --targets react,vue
