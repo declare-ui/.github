@@ -1,5 +1,6 @@
 <p align="left">
   <img width="1280" height="192" alt="wordmark-color-transparent-1280x192" src="https://github.com/user-attachments/assets/d51c038f-7822-4ee4-beb8-f438894f7736" />
+  <img width="1280" height="192" alt="wordmark-color-dark-1280x192" src="https://github.com/user-attachments/assets/44918531-3b1b-4ace-bca0-db0ea99f8bc8" />
 </p>
 
 <h1 align="left">DeclareUI</h1>
