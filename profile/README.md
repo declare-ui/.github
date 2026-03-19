@@ -1,19 +1,19 @@
-<p align="center">
-  <img src="https://raw.githubusercontent.com/declare-ui/declare-ui.github.io/main/assets/icon-color-dark-square.png" width="120" alt="DeclareUI Logo"/>
+<p align="left">
+  <img width="1280" height="192" alt="wordmark-color-transparent-1280x192" src="https://github.com/user-attachments/assets/d51c038f-7822-4ee4-beb8-f438894f7736" />
 </p>
 
-<h1 align="center">DeclareUI</h1>
+<h1 align="left">DeclareUI</h1>
 
-<p align="center">
+<p align="left">
   <strong>Write once in YAML. Ship everywhere in native code.</strong>
 </p>
 
-<p align="center">
+<p align="left">
   Define UI components declaratively in YAML or JSON.<br/>
   Compile to React, Vue, Angular, Svelte, Web Components & vanilla JS/TS — with Tailwind built in.
 </p>
 
-<p align="center">
+<p align="left">
   <a href="https://declare-ui.github.io">Website</a> •
   <a href="https://github.com/declare-ui/core">Get Started</a> •
   <a href="https://github.com/declare-ui/docs">Docs</a> •
