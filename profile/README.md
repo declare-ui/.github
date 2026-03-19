@@ -1,0 +1,110 @@
+<p align="center">
+  <img src="https://raw.githubusercontent.com/declare-ui/declare-ui.github.io/main/assets/icon-color-dark-square.png" width="120" alt="DeclareUI Logo"/>
+</p>
+
+<h1 align="center">DeclareUI</h1>
+
+<p align="center">
+  <strong>Write once in YAML. Ship everywhere in native code.</strong>
+</p>
+
+<p align="center">
+  Define UI components declaratively in YAML or JSON.<br/>
+  Compile to React, Vue, Angular, Svelte, Web Components & vanilla JS/TS — with Tailwind built in.
+</p>
+
+<p align="center">
+  <a href="https://declare-ui.github.io">Website</a> •
+  <a href="https://github.com/declare-ui/core">Get Started</a> •
+  <a href="https://github.com/declare-ui/docs">Docs</a> •
+  <a href="https://github.com/declare-ui/mcp">AI / MCP</a>
+</p>
+
+---
+
+### How it works
+
+```yaml
+# button.ui.yaml — one source file
+component: Button
+props:
+  variant:
+    type: enum
+    values: [primary, secondary, ghost]
+    default: primary
+  label:
+    type: string
+    required: true
+template:
+  tag: button
+  classes:
+    base: "px-4 py-2 rounded-lg font-medium"
+    variants:
+      variant:
+        primary: "bg-blue-600 text-white"
+        secondary: "bg-gray-100 text-gray-900"
+  children:
+    - tag: span
+      content: "$props.label"
+```
+
+```bash
+declareui build --targets react,vue,svelte,angular,wc
+```
+
+One YAML file → native, idiomatic components for every framework. Not wrappers — real React hooks, Vue Composition API, Svelte runes, Angular standalone components, and Custom Elements. Full TypeScript types included.
+
+---
+
+### Ecosystem
+
+| Repository | Description |
+|:-----------|:------------|
+| [`core`](https://github.com/declare-ui/core) | Parser, AST, validators & multi-target code generators |
+| [`cli`](https://github.com/declare-ui/cli) | CLI tool — init, build, validate, test, preview |
+| [`mcp`](https://github.com/declare-ui/mcp) | MCP Server — AI agents create components via natural language |
+| [`components`](https://github.com/declare-ui/components) | Official library of 20+ production-ready UI components |
+| [`tailwind-plugin`](https://github.com/declare-ui/tailwind-plugin) | Tailwind integration — build-time extraction, Shadow DOM, design tokens |
+| [`vscode`](https://github.com/declare-ui/vscode) | VS Code extension — autocomplete, preview, AI-assisted editing |
+| [`playground`](https://github.com/declare-ui/playground) | Interactive web playground |
+| [`docs`](https://github.com/declare-ui/docs) | Documentation site |
+| [`create-declareui`](https://github.com/declare-ui/create-declareui) | Project scaffolding — `npx create-declareui` |
+| [`examples`](https://github.com/declare-ui/examples) | Example projects per framework |
+
+---
+
+### AI-native by design
+
+DeclareUI ships with an **MCP Server** that lets AI agents like Claude, Cursor, and Windsurf create, modify, validate, and document components through conversation.
+
+```json
+{
+  "mcpServers": {
+    "declareui": {
+      "command": "npx",
+      "args": ["-y", "@declareui/mcp"]
+    }
+  }
+}
+```
+
+> *"Create a DataTable component with sorting, pagination, and search filter."*
+>
+> → The agent generates valid `.ui.yaml`, validates the schema, and compiles to your target frameworks.
+
+---
+
+### Quick start
+
+```bash
+npm install -g @declareui/cli
+declareui init my-design-system
+cd my-design-system
+declareui build --targets react,vue
+```
+
+---
+
+<p align="center">
+  <sub>Open source · MIT License · Built for teams that ship UI everywhere.</sub>
+</p>
